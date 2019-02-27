@@ -64,7 +64,15 @@ body {
       letter-spacing: 1px;
       text-decoration: none;
       margin: 0 1rem;
-      color: #000; }
+      color: #000;
+      /* Extra Small Devices, Phones */
+      /* Small Devices, Tablets */
+      /* Medium Devices */
+      /* Large Devices, Wide Screens */ }
+      @media (max-width: 1024px) {
+        .navbar__middle-wrapper__list__link {
+          font-size: 12px;
+          margin: 5px; } }
   .navbar__bottom-wrapper {
     display: flex;
     justify-content: flex-start;
@@ -79,10 +87,21 @@ body {
       letter-spacing: 1px;
       text-decoration: none;
       margin: 0 14px;
-      color: #000; }
+      padding-right: 7px;
+      color: #000;
+      /* Extra Small Devices, Phones */
+      /* Small Devices, Tablets */
+      /* Medium Devices */
+      /* Large Devices, Wide Screens */ }
+      @media (max-width: 1024px) {
+        .navbar__bottom-wrapper__list__link {
+          font-size: 12px;
+          margin: 5px; } }
     .navbar__bottom-wrapper__list:first-child {
       border-right: 1px solid #D7D7D9;
-      margin-left: 5rem; }
+      margin-left: 6.5rem; }
+    .navbar__bottom-wrapper__list:nth-child(2) {
+      padding-left: 7px; }
 
 body {
   background-color: #E3E3E3; }
@@ -104,7 +123,7 @@ body {
         border-right: 1px solid #686c73;
         margin: 0 5px; }
     .main-container .title__link-list__text {
-      font-size: 15px;
+      font-size: 14px;
       font-weight: 600;
       text-transform: uppercase;
       text-decoration: none;
@@ -182,3 +201,90 @@ body {
         display: flex;
         width: 55%;
         margin: 0 auto; }
+
+.footer {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-align: center;
+  list-style: none;
+  color: #fff;
+  background-color: #091528; }
+  .footer__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-around;
+    width: 80%; }
+  .footer__figure {
+    display: flex;
+    flex: 0 0 100%;
+    justify-content: center;
+    padding: 1rem 0; }
+    .footer__figure__logo {
+      width: 220px;
+      height: 100%; }
+  .footer__first__list {
+    list-style: inherit; }
+    .footer__first__list__items {
+      margin-top: 5px; }
+      .footer__first__list__items:first-child {
+        font-size: 13px;
+        margin-bottom: 15px; }
+  .footer__second__list {
+    list-style: inherit; }
+    .footer__second__list__items {
+      margin-top: 5px; }
+      .footer__second__list__items:first-child {
+        font-size: 13px;
+        margin-bottom: 15px; }
+  .footer__third__list {
+    list-style: inherit; }
+    .footer__third__list__items {
+      margin-top: 5px; }
+      .footer__third__list__items:first-child {
+        font-size: 13px;
+        margin-bottom: 15px; }
+  .footer__fourth__list {
+    list-style: inherit; }
+    .footer__fourth__list__items {
+      margin-top: 5px; }
+  .footer__fifth__list {
+    list-style: inherit; }
+    .footer__fifth__list__items {
+      margin-top: 5px; }
+      .footer__fifth__list__items:first-child {
+        font-size: 13px;
+        margin-bottom: 15px; }
+  .footer__sixth__list {
+    list-style: inherit; }
+    .footer__sixth__list__items {
+      margin-top: 5px; }
+      .footer__sixth__list__items:first-child {
+        font-size: 13px;
+        margin-bottom: 15px; }
+  .footer__seventh__list {
+    list-style: inherit; }
+    .footer__seventh__list__items {
+      margin-top: 5px; }
+      .footer__seventh__list__items:first-child {
+        font-size: 13px;
+        margin-bottom: 15px; }
+  .footer__eighth__list {
+    list-style: inherit; }
+    .footer__eighth__list__items {
+      margin-top: 5px; }
+      .footer__eighth__list__items:first-child {
+        font-size: 13px;
+        margin-bottom: 15px; }
+  .footer__legal-wrapper {
+    flex: 0 0 100%;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    list-style: inherit;
+    border-top: 1px solid #686C73; }
+    .footer__legal-wrapper__text {
+      margin-top: 5px; }

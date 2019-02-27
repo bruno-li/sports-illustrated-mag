@@ -67,6 +67,11 @@
                 text-decoration: none;
                 margin: 0 1rem;
                 color: #000;
+        // MEDIA QUERIES
+        @include respond(tab-port){
+            font-size: 12px;
+          margin: 5px;
+        }
             }
         }
     }
@@ -80,19 +85,28 @@
         background-color: #fff;
         border-bottom: 1px solid #D7D7D9;
         &__list{
-        
             &__link{
                 font-size: 14px;
                 text-transform: uppercase;
                 letter-spacing: 1px;
                 text-decoration: none;
                 margin: 0 14px;
+                padding-right: 7px;
                 color: #000;
+                       // MEDIA QUERIES
+        @include respond(tab-port){
+            font-size: 12px;
+            margin: 5px;
+          }
             }
             &:first-child{
                 border-right: 1px solid #D7D7D9;
-                margin-left: 5rem;
+                margin-left: 6.5rem;
             }
+            &:nth-child(2) {
+                padding-left: 7px;
+           }
+            
         }
 
     }
