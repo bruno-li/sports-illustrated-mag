@@ -1,118 +1,147 @@
+body{
+  background-color: #E3E3E3;
+}
 .main-container {
   margin: 0 auto;
-  width: 57%;
+  width: 65%;
+  padding: 5rem;
+  background-color: #fff;
     // HEADER SECTION
 .title {
     &__link-list{
       display: flex;
+      justify-content: center;
       list-style: none;
-      margin-top: 10rem;
-        &__text{
-          font-size: 20px;
-          text-decoration: none;
-          margin-right:  5px;
-          color: #6D6D72;
-          border-bottom: 1px solid #cd0912;
-          &:hover{
-            color: #cd0912;
-          }
+      margin-top: 4rem;
+      &__item
+      {
+        display: flex;
+        align-items: center;
+        &:first-child{
+          border-right: 1px solid #686c73;
+          margin: 0 5px;
         }
       }
-    &__chevron{
-      margin-right: 10px;
-      margin-top: 1px;
-      width: 16px;
-      height: 100%;
-    }
+        &__text{
+          font-size: 15px;
+          font-weight: 600;
+          text-transform: uppercase;
+          text-decoration: none;
+          letter-spacing: 1px;
+          margin: 0 5px;
+          color: #686c73;
+        }
+      }
 
     // HEADING
     &__header{
         &__heading{
-          font-family: 'Noto Sans', sans-serif;
-          font-size: 64px;
-          font-weight: 700;
-          line-height: 68px;
-          margin-top: 3rem;
-          margin-bottom: 1rem;
-          // MEDIA QUERIES
-          @include respond(small-phone){
-            font-size: 38px;
-            line-height: 40px;
-            margin-top: 1rem;
-          }
+          font-size: 42px;
+          font-weight: 600;
+          line-height: 48px;
+          letter-spacing: 1px;
+          text-align: center;
+          color: #232526;
+          margin: 1rem;
         }
 
-        &__paragraph{
-          font-family: 'Noto Serif', sans-serif;
-          font-size: 26px;
-          font-weight: 400;
-          padding-bottom: 14px;
-          border-bottom: 1px solid #EAEAEA;
-          // MEDIA QUERIES
-          @include respond(small-phone){
-            font-size: 22px;
+        &__figure{
+          display: flex;
+          &__social-media{
+            margin: 0 auto;
+            width: 130px;
+            height: 100%;
           }
         }
     }
-    &__author{
-      font-weight: 400;
-      font-size: 23px;
-      margin-top: 16px;
-      // MEDIA QUERIES
-      @include respond(small-phone){
-        font-size: 20px;
-      }
-        &__name{
-          color: #000;
-          text-decoration: none;
-          border-bottom: 1px solid #cd0912;
-        }
-    }
-    &__figure{
-      margin: 2.5rem 0;
+    &__figure__video{
+      display: flex;
+      margin-top: 1rem;
       &__img{
-        display: block;
         margin: 0 auto;
-        width: 55%;
-
+        width:100%; 
+        height: 100%;
       }
+    }
+
+    &__question{
+      margin-top: 1rem;
+      // text-align: center;
+      &__list{
+       list-style: none;
+       font-size: 18px;
+       line-height: 16px;
+       text-transform: uppercase;
+       color: #686c73;
+       
+       &:last-child{
+         font-size: 16px;
+         line-height: 20px;
+         text-transform: none;
+         margin-top: 10px;
+         color: #232526;
+        &::before{
+          content: "\25A0";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+          margin-right: 5px;
+          color: #FEB902;
+         }
+       }
+      }
+    }
+
+    &__author{
+      font-weight: 500;
+      font-size: 16px;
+      margin-top: 24px;
+      color: #232526;
+      // MEDIA QUERIES
+        &__name{
+          font-weight: 600;
+          color: #FE411F;
+          text-decoration: none;
+        }
     }
    }
 
 
 //    MAIN CONTENT
   .main-content{
-    font-family: 'Noto Serif', sans-serif;
     margin-top: 1rem;
-    .figure{
-      margin-top: 2rem;
-      &__image{
-        display: block;
-        margin: 0 auto;
-        width: 80%;
-      }
-    }
+    // .figure{
+    //   margin-top: 2rem;
+    //   &__image{
+    //     display: block;
+    //     margin: 0 auto;
+    //     width: 80%;
+    //   }
+    // }
       // PARAGRAPHS
     &__paragraph{
-      font-size: 22px;
+      font-size: 20px;
       font-weight: 400;
-      line-height: 34px;
+      line-height: 32px;
       margin-top: 1rem;
+      color: #232526;
     }
 
-    &__heading{
-      font-family: 'Noto Sans', sans-serif;
+    &__list{
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: 1px;
+      margin-left: 1rem;
       margin-top: 1rem;
-      &__title{
-        font-size: 32px;
-        font-weight: 600;
-        
-        &--font{
-          font-size: 24px;
-          font-weight: 320;
-          padding-top: 1rem;
-        }
 
+      &__items{
+        margin-top: 10px;
+      }
+    }
+
+    &__figure{
+      margin: 1rem;
+      &__img{
+        display: flex;
+        width: 55%;
+        margin: 0 auto;
       }
     }
 
