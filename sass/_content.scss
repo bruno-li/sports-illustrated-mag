@@ -6,6 +6,14 @@ body{
   width: 65%;
   padding: 5rem;
   background-color: #fff;
+  // MEDIA QUERIES
+  @include respond(tab-port){
+    width: 100%;
+  }
+  @include respond(small-phone){
+    padding: 8px;
+  }
+
     // HEADER SECTION
 .title {
     &__link-list{
@@ -13,6 +21,10 @@ body{
       justify-content: center;
       list-style: none;
       margin-top: 4rem;
+      // MEDIA QUERIES
+      @include respond(small-phone){
+        padding-top: 3rem;
+      }
       &__item
       {
         display: flex;
@@ -20,6 +32,11 @@ body{
         &:first-child{
           border-right: 1px solid #686c73;
           margin: 0 5px;
+
+          // MEDIA QUERIES
+          @include respond(small-phone){
+            display: none;
+          }
         }
       }
         &__text{
@@ -43,6 +60,18 @@ body{
           text-align: center;
           color: #232526;
           margin: 1rem;
+
+          // MEDIA QUERIES
+          @include respond(tab-port){
+            font-size: 32px;
+            line-height: 38px;
+          }
+          @include respond(small-phone){
+            font-size: 23px;
+            line-height: 28px;
+
+          }
+        
         }
 
         &__figure{
@@ -107,14 +136,6 @@ body{
 //    MAIN CONTENT
   .main-content{
     margin-top: 1rem;
-    // .figure{
-    //   margin-top: 2rem;
-    //   &__image{
-    //     display: block;
-    //     margin: 0 auto;
-    //     width: 80%;
-    //   }
-    // }
       // PARAGRAPHS
     &__paragraph{
       font-size: 20px;

@@ -28,7 +28,16 @@
     // FIRST COLUMN
     &__first__list{
         list-style: inherit;
+        // MEDIA QUERIES
+        @include respond(phone){
+            margin-right: 2rem;
+        }
+             @include respond(small-phone){
+                flex: 0 0 50%;
+                margin-right: 0;
+                margin-bottom: 1rem;
 
+            }
         &__items{
             margin-top: 5px;
             
@@ -43,7 +52,17 @@
     // SECOND COLUMN
     &__second__list{
         list-style: inherit;
+           // MEDIA QUERIES
+           @include respond(phone){
+            margin-right: 2rem;
+        }
+        @include respond(small-phone){
+            flex: 0 0 50%;
+            margin-right: 0;
+            margin-bottom: 1rem;
 
+
+        }
         &__items{
             margin-top: 5px;
             &:first-child{
@@ -55,7 +74,17 @@
     // THIRD COLUMN
     &__third__list{
         list-style: inherit;
+   // MEDIA QUERIES
+   @include respond(phone){
+    margin-right: 2rem;
+}
+@include respond(small-phone){
+    flex: 0 0 50%;
+    margin-right: 0;
+    margin-bottom: 1rem;
 
+
+}
         &__items{
             margin-top: 5px;
             &:first-child{
@@ -64,9 +93,16 @@
             }
         }
     }
+    // FOURTH COLUMN
     &__fourth__list{
         list-style: inherit;
+        @include respond(small-phone){
+            flex: 0 0 50%;
+            margin-right: 0;
+            margin-bottom: 1rem;
 
+
+        }
         &__items{
             margin-top: 5px;
 
@@ -75,20 +111,35 @@
     // FIFHT COLUMN
     &__fifth__list{
         list-style: inherit;
+           // MEDIA QUERIES
+           @include respond(phone){
+            margin-left: 2rem;
+        }
+        @include respond(small-phone){
+            flex: 0 0 50%;
+            margin-left: 0;
+            margin-bottom: 1rem;
 
+
+        }
         &__items{
             margin-top: 5px;
             &:first-child{
                 font-size: 13px;
                 margin-bottom: 15px;
             }
-
         }
     }
     // SIXTH COLUMN
     &__sixth__list{
         list-style: inherit;
+        @include respond(small-phone){
+            flex: 0 0 50%;
+            margin-right: 0;
+            margin-bottom: 1rem;
 
+
+        }
         &__items{
             margin-top: 5px;
             &:first-child{
@@ -101,7 +152,13 @@
     // SEVENTH COLUMN
     &__seventh__list{
         list-style: inherit;
+        @include respond(small-phone){
+            flex: 0 0 50%;
+            margin-right: 0;
+            margin-bottom: 1rem;
 
+
+        }
         &__items{
             margin-top: 5px;
             &:first-child{
@@ -114,7 +171,12 @@
     // EIGHTH COLUMN
     &__eighth__list{
         list-style: inherit;
+        @include respond(small-phone){
+            flex: 0 0 50%;
+            margin-right: 0;
 
+
+        }
         &__items{
             margin-top: 5px;
             &:first-child{
@@ -128,14 +190,12 @@
         flex: 0 0 100%;
         font-weight: 300;
         text-align: center;
-        margin-top: 2rem;
+        margin: 2rem;
         padding-top: 1rem;
         list-style: inherit;
         border-top: 1px solid #686C73;
-
         &__text{
             margin-top: 5px;
-
         }
     }
 }
