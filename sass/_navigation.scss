@@ -1,0 +1,97 @@
+.navbar{
+    font-family: sans-serif;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    // TOP CONTAINER
+    &__top-wrapper{
+        display: flex;
+        justify-content: space-between;
+        background-color: #091528;
+        height: 50px;
+        .navbar__logo-wrapper{
+            display: flex;
+            align-items: center;
+            list-style: none;
+            margin-left: 3rem;
+            &__menu{
+                width: 250px;
+                height: 32px;
+            }
+        }
+        // TOP CONTAINER LINKS
+        .navbar__right-wrapper{
+            display: flex;
+            align-items: center;
+            list-style: none;
+            margin-right: 3rem;
+            &__list{
+                &__link{
+                    font-size: 12px;
+                    font-weight: 500;
+                    letter-spacing: 1px;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    margin: 0 10px;
+                    color: #fff;
+                    &:hover{
+                        color: #fe4020;
+                    }
+                }
+                &__search{
+                    margin-top: 11px;
+                    margin-left: 16px;
+                    width: 25px;
+                }
+            }
+         
+        }
+    }
+    // MIDDLE CONTAINER
+    &__middle-wrapper{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 10px 0;
+        border-bottom: 1px solid #D7D7D9;
+        &__list{
+            &__link{
+                font-size: 14px;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                text-decoration: none;
+                margin: 0 1rem;
+                color: #000;
+            }
+        }
+    }
+    // BOTTOM CONTAINER
+    &__bottom-wrapper{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        list-style: none;
+        padding: 10px 0;
+        border-bottom: 1px solid #D7D7D9;
+        &__list{
+        
+            &__link{
+                font-size: 14px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                text-decoration: none;
+                margin: 0 14px;
+                color: #000;
+            }
+            &:first-child{
+                border-right: 1px solid #D7D7D9;
+                margin-left: 5rem;
+            }
+        }
+
+    }
+}
