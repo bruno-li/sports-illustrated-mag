@@ -16,6 +16,10 @@
             align-items: center;
             list-style: none;
             margin-left: 3rem;
+            // MEDIA QUERIES
+            @include respond(small-phone){
+                margin-left: 1.5rem;
+            }
             &__item{
                 margin-right: 1rem;
             }
