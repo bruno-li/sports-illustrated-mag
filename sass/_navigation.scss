@@ -17,6 +17,10 @@
             align-items: center;
             list-style: none;
             margin-left: 3rem;
+            // MEDIA QUERIES
+            @include respond(small-phone){
+                margin-left: 1.5rem;
+            }
             &__menu{
                 width: 250px;
                 height: 32px;
@@ -45,6 +49,17 @@
                     margin-top: 11px;
                     margin-left: 16px;
                     width: 25px;
+                    // MEDIA QUERIES
+                    @include respond(small-phone){
+                        width: 20px;
+                         margin-left: 70px;
+                    }
+                }
+                // MEDIA QUERIES
+                @include respond(small-phone){
+                    &:nth-child(-n+7) {
+                        display: none;
+                    }
                 }
             }
          
@@ -67,12 +82,24 @@
                 text-decoration: none;
                 margin: 0 1rem;
                 color: #000;
-        // MEDIA QUERIES
-        @include respond(tab-port){
-            font-size: 12px;
-          margin: 5px;
-        }
+               // MEDIA QUERIES
+              @include respond(tab-port){
+                 font-size: 12px;
+                 margin: 5px;
+              }
+              @include respond(small-phone){
+                font-size: 15px;
+                font-weight: 500;
+                margin: 0 1.5rem;
+              }
             }
+            // MEDIA QUERIES
+            @include respond(small-phone){
+                &:nth-child(n+5) {
+                    display: none;
+                }
+            }
+          
         }
     }
     // BOTTOM CONTAINER

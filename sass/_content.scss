@@ -32,7 +32,6 @@ body{
         &:first-child{
           border-right: 1px solid #686c73;
           margin: 0 5px;
-
           // MEDIA QUERIES
           @include respond(small-phone){
             display: none;
@@ -143,6 +142,10 @@ body{
       line-height: 32px;
       margin-top: 1rem;
       color: #232526;
+      // MEDIA QUERIES
+      @include respond(small-phone){
+        font-size: 18px;
+      }
     }
 
     &__list{
@@ -151,6 +154,11 @@ body{
       letter-spacing: 1px;
       margin-left: 1rem;
       margin-top: 1rem;
+           // MEDIA QUERIES
+           @include respond(small-phone){
+            font-size: 18px;
+            margin-left: 1.5rem;
+          }
 
       &__items{
         margin-top: 10px;
@@ -163,6 +171,10 @@ body{
         display: flex;
         width: 55%;
         margin: 0 auto;
+        // MEDIA QUERIES
+        @include respond(small-phone){
+          width: 100%;
+        }
       }
     }
 
