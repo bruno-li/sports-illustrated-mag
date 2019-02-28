@@ -13,7 +13,6 @@ body{
   @include respond(small-phone){
     padding: 8px;
   }
-
     // HEADER SECTION
 .title {
     &__link-list{
@@ -30,8 +29,8 @@ body{
         display: flex;
         align-items: center;
         &:first-child{
-          border-right: 1px solid #686c73;
           margin: 0 5px;
+          border-right: 1px solid #686c73;
           // MEDIA QUERIES
           @include respond(small-phone){
             display: none;
@@ -41,9 +40,9 @@ body{
         &__text{
           font-size: 14px;
           font-weight: 600;
+          letter-spacing: 1px;
           text-transform: uppercase;
           text-decoration: none;
-          letter-spacing: 1px;
           margin: 0 5px;
           color: #686c73;
         }
@@ -57,9 +56,8 @@ body{
           line-height: 48px;
           letter-spacing: 1px;
           text-align: center;
-          color: #232526;
           margin: 1rem;
-
+          color: #232526;
           // MEDIA QUERIES
           @include respond(tab-port){
             font-size: 32px;
@@ -68,11 +66,9 @@ body{
           @include respond(small-phone){
             font-size: 23px;
             line-height: 28px;
-
           }
         
         }
-
         &__figure{
           display: flex;
           &__social-media{
@@ -94,7 +90,6 @@ body{
 
     &__question{
       margin-top: 1rem;
-      // text-align: center;
       &__list{
        list-style: none;
        font-size: 18px;
@@ -109,7 +104,7 @@ body{
          margin-top: 10px;
          color: #232526;
         &::before{
-          content: "\25A0";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+          content: "\25A0";
           margin-right: 5px;
           color: #FEB902;
          }
@@ -125,13 +120,12 @@ body{
       // MEDIA QUERIES
         &__name{
           font-weight: 600;
-          color: #FE411F;
           text-decoration: none;
+          color: #FE411F;
+
         }
     }
-   }
-
-
+}
 //    MAIN CONTENT
   .main-content{
     margin-top: 1rem;
@@ -152,8 +146,7 @@ body{
       font-size: 20px;
       line-height: 24px;
       letter-spacing: 1px;
-      margin-left: 1rem;
-      margin-top: 1rem;
+      margin: 1rem 0 0 1rem;
            // MEDIA QUERIES
            @include respond(small-phone){
             font-size: 18px;
@@ -177,7 +170,5 @@ body{
         }
       }
     }
-
   }
-
 }

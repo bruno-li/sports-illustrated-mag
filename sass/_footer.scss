@@ -11,8 +11,8 @@
     &__wrapper{
         display: flex;
         flex-wrap: wrap;
-        margin: 0 auto;
         justify-content: space-around;
+        margin: 0 auto;
         width: 80%;
     }
     &__figure{
@@ -34,21 +34,16 @@
         }
              @include respond(small-phone){
                 flex: 0 0 50%;
-                margin-right: 0;
-                margin-bottom: 1rem;
-
+                margin: 0 0 1rem 0;
             }
         &__items{
             margin-top: 5px;
-            
             &:first-child{
                 font-size: 13px;
                 margin-bottom: 15px;
             }
         }
-        
     }
-
     // SECOND COLUMN
     &__second__list{
         list-style: inherit;
@@ -58,10 +53,7 @@
         }
         @include respond(small-phone){
             flex: 0 0 50%;
-            margin-right: 0;
-            margin-bottom: 1rem;
-
-
+            margin: 0 0 1rem 0;
         }
         &__items{
             margin-top: 5px;
@@ -77,14 +69,12 @@
    // MEDIA QUERIES
    @include respond(phone){
     margin-right: 2rem;
-}
-@include respond(small-phone){
+    }
+    @include respond(small-phone){
     flex: 0 0 50%;
     margin-right: 0;
     margin-bottom: 1rem;
-
-
-}
+    }
         &__items{
             margin-top: 5px;
             &:first-child{
@@ -98,14 +88,10 @@
         list-style: inherit;
         @include respond(small-phone){
             flex: 0 0 50%;
-            margin-right: 0;
-            margin-bottom: 1rem;
-
-
+            margin: 0 0 1rem 0;
         }
         &__items{
             margin-top: 5px;
-
         }
     }
     // FIFHT COLUMN
@@ -117,8 +103,7 @@
         }
         @include respond(small-phone){
             flex: 0 0 50%;
-            margin-left: 0;
-            margin-bottom: 1rem;
+            margin: 0 0 1rem 0;
 
 
         }
@@ -137,8 +122,6 @@
             flex: 0 0 50%;
             margin-right: 0;
             margin-bottom: 1rem;
-
-
         }
         &__items{
             margin-top: 5px;
@@ -154,8 +137,7 @@
         list-style: inherit;
         @include respond(small-phone){
             flex: 0 0 50%;
-            margin-right: 0;
-            margin-bottom: 1rem;
+            margin: 0 0 1rem 0;
         }
         &__items{
             margin-top: 5px;
@@ -188,9 +170,9 @@
         flex: 0 0 100%;
         font-weight: 300;
         text-align: center;
+        list-style: inherit;
         margin: 2rem;
         padding-top: 1rem;
-        list-style: inherit;
         border-top: 1px solid #686C73;
         &__text{
             margin-top: 5px;

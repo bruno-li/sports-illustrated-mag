@@ -5,25 +5,34 @@
     right: 0;
     bottom: 0;
     left: 0;
-
     // TOP CONTAINER
     &__top-wrapper{
         display: flex;
         justify-content: space-between;
+        height: 53px;
         background-color: #091528;
-        height: 50px;
         .navbar__logo-wrapper{
             display: flex;
             align-items: center;
             list-style: none;
             margin-left: 3rem;
-            // MEDIA QUERIES
-            @include respond(small-phone){
-                margin-left: 1.5rem;
+            &__item{
+                margin-right: 1rem;
             }
             &__menu{
-                width: 250px;
+               width: 25px;
+               margin-bottom: 4px;
+            }
+            &__logo{
+                width: 190px;
                 height: 32px;
+                // MEDIA QUERIES
+                @include respond(phone){
+                    margin-left: 10rem;
+                }
+                @include respond(small-phone){
+                    margin-left: 1.5rem;
+                }
             }
         }
         // TOP CONTAINER LINKS
@@ -32,27 +41,30 @@
             align-items: center;
             list-style: none;
             margin-right: 3rem;
+            // MEDIA QUERIES
+            @include respond(phone){
+                display: none;
+            }
             &__list{
                 &__link{
                     font-size: 12px;
                     font-weight: 500;
                     letter-spacing: 1px;
+                    margin: 0 10px;
                     text-decoration: none;
                     text-transform: uppercase;
-                    margin: 0 10px;
                     color: #fff;
                     &:hover{
                         color: #fe4020;
                     }
                 }
                 &__search{
-                    margin-top: 11px;
-                    margin-left: 16px;
+                    margin: 11px 0 0 16px;
                     width: 25px;
                     // MEDIA QUERIES
                     @include respond(small-phone){
-                        width: 20px;
-                         margin-left: 70px;
+                         width: 20px;
+                         margin-left: 60px;
                     }
                 }
                 // MEDIA QUERIES
@@ -77,8 +89,8 @@
             &__link{
                 font-size: 14px;
                 font-weight: 600;
-                text-transform: uppercase;
                 letter-spacing: 1px;
+                text-transform: uppercase;
                 text-decoration: none;
                 margin: 0 1rem;
                 color: #000;
@@ -118,18 +130,17 @@
         &__list{
             &__link{
                 font-size: 14px;
-                text-transform: uppercase;
                 letter-spacing: 1px;
+                text-transform: uppercase;
                 text-decoration: none;
                 margin: 0 14px;
                 padding-right: 7px;
                 color: #000;
                        // MEDIA QUERIES
-        @include respond(tab-port){
-            font-size: 12px;
-            margin: 5px;
-          }
-      
+               @include respond(tab-port){
+                  font-size: 12px;
+                  margin: 5px;
+             }
             }
             &:first-child{
                 border-right: 1px solid #D7D7D9;
@@ -140,6 +151,5 @@
            }
             
         }
-
     }
 }
